@@ -1,0 +1,19 @@
+{
+    "ACCOUNT": [
+        {
+            "usernames": "admin",
+            "password": "123",
+            "name": "Thanh Tho"
+        },
+        {
+            "usernames": "user1",
+            "password": "123",
+            "name": "Ngoc Hien"
+        },
+        {
+            "usernames": "user2",
+            "password": "123",
+            "name": "Thanh Thao"
+        }
+    ]
+}

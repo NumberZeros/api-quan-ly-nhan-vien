@@ -1,19 +1,27 @@
 import { Controller, Get, Post, Req, Body, Header, Param} from '@nestjs/common';
-import { Request } from 'express';
-
+import { Response } from 'express';
+import { IAccount } from '../interface/account.interface'
 @Controller('/account')
 export class AccountController {
-    @Get('/:id')
-    @Header('Cache-Control', 'none')
-    findAll(@Req() request: Request, @Body() body: Body, @Param() param): Object {
-        // console.log("req",request);
-        console.log("body",body)
-        console.log("Params",param)
-      return {};
+    @Get()
+    async findAll(): Promise<IAccount[]>{
+      const accounts = [
+        {
+            username: 'admin',
+            password: '123',
+            name: 'Thanh Tho'
+        },
+        {
+            username: 'user1',
+            password: '123',
+            name: 'Ngoc Hien'
+        },
+        {
+            username: 'user2',
+            password: '123',
+            name: 'Thanh Thao'
+        }
+    ]
+      return accounts
     }
-
-  @Post()
-  create(): string {
-    return 'This action adds a new cat';
-  }
 }

@@ -1,5 +1,4 @@
-import { Request } from 'express';
+import { IAccount } from '../interface/account.interface';
 export declare class AccountController {
-    findAll(request: Request, body: Body, param: any): Object;
-    create(): string;
+    findAll(): Promise<IAccount[]>;
 }

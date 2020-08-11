@@ -8,36 +8,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AccountController = void 0;
 const common_1 = require("@nestjs/common");
 let AccountController = class AccountController {
-    findAll(request, body, param) {
-        console.log("body", body);
-        console.log("Params", param);
-        return {};
-    }
-    create() {
-        return 'This action adds a new cat';
+    async findAll() {
+        const accounts = [
+            {
+                username: 'admin',
+                password: '123',
+                name: 'Thanh Tho'
+            },
+            {
+                username: 'user1',
+                password: '123',
+                name: 'Ngoc Hien'
+            },
+            {
+                username: 'user2',
+                password: '123',
+                name: 'Thanh Thao'
+            }
+        ];
+        return accounts;
     }
 };
 __decorate([
-    common_1.Get('/:id'),
-    common_1.Header('Cache-Control', 'none'),
-    __param(0, common_1.Req()), __param(1, common_1.Body()), __param(2, common_1.Param()),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object, Object]),
-    __metadata("design:returntype", Object)
-], AccountController.prototype, "findAll", null);
-__decorate([
-    common_1.Post(),
+    common_1.Get(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", String)
-], AccountController.prototype, "create", null);
+    __metadata("design:returntype", Promise)
+], AccountController.prototype, "findAll", null);
 AccountController = __decorate([
     common_1.Controller('/account')
 ], AccountController);

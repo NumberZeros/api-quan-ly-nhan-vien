@@ -1461,13 +1461,18 @@
         "signature": "46453f63ea6f9197248ffb80839f423b14f8d8d7dbb2c4902b8797b44d259859",
         "affectsGlobalScope": false
       },
+      "../src/interface/account.interface.ts": {
+        "version": "fcb41115f5024217907fb9f25fbcfed1314ec98d71c2ab7eae24708c419a1185",
+        "signature": "9688d00e04c1032e8fe0bdcb00f2e1ee7736f7be705ee27f212e843e7d865354",
+        "affectsGlobalScope": false
+      },
       "../src/account/account.controller.ts": {
-        "version": "f747668b83830ad412cffc21de8e3427af892c5773b7698b3a3c85acb19a38fc",
-        "signature": "dcdd85dbf4be3da389bfad62213b4284719bb15ef061f30737524f3272dfd4a6",
+        "version": "75a86e031585c2edbf2b01f3f802c1ca026c7ff922c0f03e2cf9a67cb0bda7d2",
+        "signature": "a6bae222167f0613574c7d2ed585ada741f705e8bfe2e152265188da1b91a386",
         "affectsGlobalScope": false
       },
       "../src/account/account.module.ts": {
-        "version": "e1b830968c790ddb8538a1edb4075e3e564028ed60a2ac157895e56aa598d5e1",
+        "version": "1971a24f8f1e1d646b01791c5d40292a9b7d9183b569218b8506cf1c043440f2",
         "signature": "7ae227e54dcf0b42820d90ceb0df5e3c9647fd74f1a1d6c9bf10742bd12c3b98",
         "affectsGlobalScope": false
       },
@@ -5162,7 +5167,8 @@
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
+        "../node_modules/@types/node/util.d.ts",
+        "../src/interface/account.interface.ts"
       ],
       "../src/account/account.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -5196,6 +5202,13 @@
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/interface/account.interface.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -8479,7 +8492,7 @@
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/account/account.controller.ts": [
-        "../node_modules/@types/express/index.d.ts"
+        "../src/interface/account.interface.ts"
       ],
       "../src/app.controller.ts": [
         "../src/app.service.ts"
